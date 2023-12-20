@@ -2,17 +2,19 @@ import "./App.css";
 
 import Nav from "./components/nav";
 import Sidebar from "./components/Sidebar";
+import Home from "./components/Home";
+
 
 function App() {
   return (
-    <div className="bg-gray-950 h-screen text-white">
-      <div className="flex justify-start items-start w-full">
-        <section className="w-72 h-screen">
+    <div className="bg-gray-950 text-white relative">
+      <div className="flex justify-start items-start w-full ">
+        <section className="w-[20%] fixed">
           <div className="w-full"><Sidebar /></div>
         </section>
-        <section className="w-full h-10">
-          <div className="w-full"><Nav /></div>
-          {/* <div className="bg-yellow-400 h-10 w-full"></div> */}
+        <section className="w-[80%] ms-[20%]">
+          <div className="w-full fixed"><Nav /></div>
+          <div className="w-full mt-32"><Home /></div>
         </section>
       </div>
 
