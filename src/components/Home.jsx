@@ -4,17 +4,17 @@ function Home() {
   return (
     <section className="">
 
-      <section className="flex flex-col justify-center items-center md:px-20 px-8 py-4 gap-x-10 ">
-        <section className="grid md:grid-cols-3 gap-8 sm:grid-cols-2 grid-cols-1 ">
+      <section className="flex md:flex-col flex-row justify-center items-center md:px-20 px-8 py-4 md:gap-x-10 gap-x-2">
+        <section className="grid md:grid-cols-3 gap-8 sm:grid-cols-2 grid-cols-1">
           <div className="flex justify-start items-start flex-col shadow-md rounded-lg p-4">
             <img src="./assets/home/image-2.jpg" alt="" />
             <div>
-              <div className="flex justify-center items-center gap-2 ">
+              <div className="flex justify-center items-center gap-2">
                 <div>
                   <img
                     src="./assets/home/icon-1.jpg"
                     alt=""
-                    className=" rounded-full w-20"
+                    className="rounded-full w-20"
                   />
                 </div>
                 <div>

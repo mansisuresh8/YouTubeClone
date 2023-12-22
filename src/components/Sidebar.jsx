@@ -32,8 +32,8 @@ import { FaHome } from "react-icons/fa";
 
 function Sidebar() {
   return (
-    <div className="border-e overflow-auto h-screen pt-4 ">
-      <section className="flex justify-start items-center flex-row gap-8 text-2xl px-16">
+    <div className="overflow-auto h-screen pt-4">
+      <section className="flex justify-start items-center md:flex-row flex-col md:gap-8 md:text-2xl text-lg md:px-16 px-4">
         <div>
           <RxHamburgerMenu />
         </div>
@@ -47,24 +47,24 @@ function Sidebar() {
           </div>
         </div>
       </section>
-      <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2  gap-8 ">
+      <section className="hover:bg-gray-800 cursor-pointer md:px-16 px-6">
+        <div className="flex justify-start items-center md:flex-row flex-col py-2 md:gap-8">
           <div>
             <FaHome />
           </div>
-          <p>Home</p>
+          <p className="">Home</p>
         </div>
       </section>
-      <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8">
+      <section className="hover:bg-gray-800 cursor-pointer md:px-16 px-6">
+        <div className="flex justify-start items-center md:flex-row flex-col py-2 md:gap-8">
           <div>
             <SiYoutubeshorts />
           </div>
           <p>Shorts</p>
         </div>
       </section>
-      <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+      <section className="hover:bg-gray-800 cursor-pointer md:px-16 px-6">
+        <div className="flex justify-start items-center md:flex-row flex-col py-2 md:gap-8">
           <div>
             <MdSubscriptions />
           </div>
@@ -72,7 +72,7 @@ function Sidebar() {
         </div>
       </section>
       <div className="w-full h-px bg-white my-4"></div>
-      <section className="hover:bg-gray-800 cursor-pointer ">
+      <section className="hover:bg-gray-800 cursor-pointer">
         <div className="flex justify-start items-center px-4 py-4 text-lg gap-2 w-full">
           <p>You</p>
           <div className="w-40">

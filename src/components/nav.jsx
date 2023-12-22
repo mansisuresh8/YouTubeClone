@@ -8,15 +8,15 @@ import { FaMicrophone } from "react-icons/fa";
 function nav() {
   return (
     <div className="bg-black z-10 py-4 w-[80%]">
-      <section className=" flex justify-center items-center w-full py-4 text-white text-2xl px-4">
+      <section className="flex justify-center items-center w-full py-4 text-white text-2xl px-4">
         <section className="flex justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full">
+          <div className="flex justify-center items-center w-full ">
             <div className="flex justify-center items-center w-1/2">
-              <div className="border rounded-full  flex justify-between items-center px-2 w-full">
+              <div className="border rounded-full flex justify-between items-center px-2 w-full">
                 <input
                   type="text"
                   placeholder="Search"
-                  className="outline-none bg-transparent px-4 py-2 w-full"
+                  className="outline-none bg-transparent px-4 py-2 md:w-full w-96"
                 />
                 <div className="me-2">
                   <IoIosSearch />
@@ -27,22 +27,25 @@ function nav() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center gap-4">
-            <div className="flex ">
+
+          <div className="flex justify-center items-center gap-4 ">
+            <div>
               <FaVideo />
             </div>
-            <div className="flex ">
+            <div>
               <IoIosNotificationsOutline />
             </div>
-            <div className="flex ">
+            <div>
               <MdAccountBox />
             </div>
           </div>
         </section>
       </section>
+
+      {/* scrollbar */}
       <section className="">
         <div className="overflow-x-auto hidden-scrollbar whitespace-nowrap">
-          <div className="flex justify-center items-center my-4 gap-4 ps-[60%]">
+          <div className="flex md:justify-center md:items-center justify-start items-start my-4 md:gap-4 gap-2 md:ps-[60%] ps-[20%]">
             <button className="rounded-lg border border-white px-4 py-1 bg-white text-black">
               All
             </button>
