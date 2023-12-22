@@ -8,7 +8,7 @@ import { FaMicrophone } from "react-icons/fa";
 function nav() {
   return (
     <div className="bg-black z-10 py-4 w-[80%]">
-      <section className="flex justify-center items-center w-full py-4 text-white text-2xl px-4">
+      <section className="flex justify-center items-center w-full py-4 text-white text-2xl md:px-4 px-2">
         <section className="flex justify-between items-center w-full">
           <div className="flex justify-center items-center w-full ">
             <div className="flex justify-center items-center w-1/2">
