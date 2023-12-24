@@ -13,6 +13,8 @@ function Home() {
           <VedioSection />
           <VedioSection />
           <VedioSection />
+          <VedioSection />
+          <VedioSection />
         </section>
       </section>
     </section>
