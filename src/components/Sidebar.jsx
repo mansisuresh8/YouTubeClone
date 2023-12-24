@@ -33,7 +33,7 @@ import { FaHome } from "react-icons/fa";
 function Sidebar() {
   return (
     <div className="overflow-auto h-screen pt-4">
-      <section className="flex justify-start items-center md:flex-row flex-col md:gap-8 md:text-2xl text-lg md:px-16 px-4">
+      <section className="flex justify-start items-center flex-row gap-8 text-2xl md:px-16 px-6">
         <div>
           <RxHamburgerMenu />
         </div>
@@ -48,7 +48,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer md:px-16 px-6">
-        <div className="flex justify-start items-center md:flex-row flex-col py-2 md:gap-8">
+        <div className="flex justify-start items-center md:flex-row flex-col md:py-2 py-10 md:gap-8">
           <div>
             <FaHome />
           </div>
@@ -56,7 +56,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer md:px-16 px-6">
-        <div className="flex justify-start items-center md:flex-row flex-col py-2 md:gap-8">
+        <div className="flex justify-start items-center md:flex-row flex-col md:py-2 py-6 md:gap-8">
           <div>
             <SiYoutubeshorts />
           </div>
@@ -64,16 +64,16 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer md:px-16 px-6">
-        <div className="flex justify-start items-center md:flex-row flex-col py-2 md:gap-8">
+        <div className="flex justify-start items-center md:flex-row flex-col md:py-2 py-6 md:gap-8">
           <div>
             <MdSubscriptions />
           </div>
           <p>Subscription</p>
         </div>
       </section>
-      <div className="w-full h-px bg-white my-4"></div>
+      <div className="w-full h-px md:bg-white my-4"></div>
       <section className="hover:bg-gray-800 cursor-pointer">
-        <div className="flex justify-start items-center px-4 py-4 text-lg gap-2 w-full">
+        <div className="flex justify-start items-center px-4 md:py-4 py-2 text-lg gap-2 w-full">
           <p>You</p>
           <div className="w-40">
             <MdKeyboardArrowRight />
@@ -81,7 +81,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <MdOutlineAccountBox />
           </div>
@@ -89,7 +89,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div className="">
             <MdHistory />
           </div>
@@ -97,7 +97,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <BiSolidVideos />
           </div>
@@ -105,7 +105,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <MdOutlineWatchLater />
           </div>
@@ -113,35 +113,35 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <BiSolidLike />
           </div>
           <p>Liked watch</p>
         </div>
       </section>
-      <div className="w-full h-px bg-white my-4"></div>
+      <div className="w-full h-px md:bg-white my-4"></div>
       <section className="hover:bg-gray-800 cursor-pointer">
-        <div className="flex justify-between items-center px-4 py-4 text-lg gap-2 w-full">
+        <div className="md:flex justify-between items-center px-4 py-4 text-lg gap-2 w-full hidden">
           <p>Subscription</p>
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <FaPlusCircle />
           </div>
           <p>Browse channel</p>
         </div>
       </section>
-      <div className="w-full h-px bg-white my-4"></div>
+      <div className="w-full h-px md:bg-white my-4"></div>
       <section className="hover:bg-gray-800 cursor-pointer">
-        <div className="flex justify-between items-center px-4 py-4 text-lg gap-2 w-full">
+        <div className="md:flex justify-between items-center px-4 py-4 text-lg gap-2 w-full hidden">
           <p>Explore</p>
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <FaFireAlt />
           </div>
@@ -149,7 +149,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <HiShoppingBag />
           </div>
@@ -157,7 +157,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <IoMdMusicalNote />
           </div>
@@ -165,7 +165,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <BiMoviePlay />
           </div>
@@ -173,7 +173,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <CiStreamOn />
           </div>
@@ -181,7 +181,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <IoGameController />
           </div>
@@ -189,7 +189,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <FaRegNewspaper />
           </div>
@@ -197,7 +197,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <FaTrophy />
           </div>
@@ -205,7 +205,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <IoMdBulb />
           </div>
@@ -213,7 +213,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <PiCoatHangerFill />
           </div>
@@ -221,21 +221,21 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <MdOutlinePodcasts />
           </div>
           <p>Podcast</p>
         </div>
       </section>
-      <div className="w-full h-px bg-white my-4"></div>
+      <div className="w-full h-pxmd: bg-white my-4"></div>
       <section className="hover:bg-gray-800 cursor-pointer">
-        <div className="flex justify-between items-center px-4 py-4 text-lg gap-2 w-full">
+        <div className="md:flex justify-between items-center px-4 py-4 text-lg gap-2 w-full hidden">
           <p>More Frome YouTube</p>
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div className="text-red-700">
             <FaYoutube />
           </div>
@@ -243,7 +243,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div className="text-red-700">
             <SiYoutubestudio />
           </div>
@@ -251,7 +251,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div className="text-red-700">
             <SiYoutubemusic />
           </div>
@@ -259,16 +259,16 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div className="text-red-700">
             <TbBrandYoutubeKids />
           </div>
           <p>YouTube Kids</p>
         </div>
       </section>
-      <div className="w-full h-px bg-white my-4"></div>
+      <div className="w-full h-px md:bg-white my-4"></div>
       <section className="hover:bg-gray-800 cursor-pointer  px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <CiSettings />
           </div>
@@ -276,7 +276,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <CiFlag1 />
           </div>
@@ -284,7 +284,7 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <IoIosHelpCircleOutline />
           </div>
@@ -292,15 +292,16 @@ function Sidebar() {
         </div>
       </section>
       <section className="hover:bg-gray-800 cursor-pointer px-16">
-        <div className="flex justify-start items-center py-2 gap-8 ">
+        <div className="md:flex justify-start items-center py-2 gap-8 hidden">
           <div>
             <MdOutlineFeedback />
           </div>
           <p>Send feedback</p>
         </div>
       </section>
-      <div className="w-full h-px bg-white my-4"></div>
+      <div className="w-full h-px md:bg-white my-4"></div>
       <section className="hover:bg-gray-800 py-8 ps-4">
+        <div className="md:flex justify-center items-center hidden">
         <div className="py-2 text-sm px-4">
           <p>AboutPress Copyright Contact us Creators Advertise Developers</p>
           <p className="py-4">
@@ -308,6 +309,8 @@ function Sidebar() {
           </p>
           <p>© 2023 Google LLC</p>
         </div>
+        </div>
+
       </section>
     </div>
   );
